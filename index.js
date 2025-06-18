@@ -12,10 +12,7 @@ require("dotenv").config();
 app.use(express.json());
 app.use(
   cors({
-    origin: [
-      "http://localhost:5173",
-      "https://book-store-sage-ten.vercel.app/",
-    ],
+    origin: ["http://localhost:5173", "https://book-store-sage-ten.vercel.app"],
     credentials: true,
   })
 );
